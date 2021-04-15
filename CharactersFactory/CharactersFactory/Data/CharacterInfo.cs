@@ -9,15 +9,13 @@ namespace CharactersFactory
         public static Character obtainCharacter()
         {
             Console.Clear();
-            AskCharacterData characterData = new AskCharacterData();
+            RoleAsker roleData = new RoleAsker();
+            NameAsker nameData = new NameAsker();
             Console.WriteLine("--------CHARACTER INFO--------");
-            //Obtain Role
-            var role = characterData.askData("Role");
-            //Obtain Name
-            string name = characterData.askData("Name");
+            var role = roleData.askData();//Obtain Role
+            string name = nameData.askData();//Obtain Name
             Character character = CharacterFactory.CreateCharacter(role, name);
             return character;
-
         }
     }
 }
