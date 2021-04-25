@@ -14,7 +14,7 @@ the **Factory creational pattern** for the character creation part in the projec
 
 Just run this program with a C# compiler.
 
-This game manu consist of:
+This mini game menu program consist of:
 
 -  An initial character creation.
 -  A menu which lets the user choose to create more characters, to select another character that was created or to showcase the actual player in use.
