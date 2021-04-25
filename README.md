@@ -19,6 +19,8 @@ This mini game menu program consist of:
 -  An initial character creation.
 -  A menu which lets the user choose to create more characters, to select another character that was created or to showcase the actual player in use.
 
+This process is in the main program (program.cs)
+
 Note: The default character in use is the initial character that is created at the start of the program.
 
 ## Documentation
