@@ -22,9 +22,12 @@ namespace CharactersFactory
         {
             StringBuilder characterData = new StringBuilder();
             characterData.Append($"Name: {character.name} | health {character.health} | ");
-            characterData.Append($"action: {character.action} role: {character.GetType().Name}");
+            characterData.Append($"action: {character.action} | role: {character.GetType().Name}");
+
+            Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine(characterData);
             Console.WriteLine();
+            Console.ForegroundColor = ConsoleColor.White;
         }
     }
 }

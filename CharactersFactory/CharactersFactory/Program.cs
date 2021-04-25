@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Threading;
 
 namespace CharactersFactory
 {
@@ -7,31 +8,55 @@ namespace CharactersFactory
     {
         static void Main(string[] args)
         {
-            //Game variables
+            // Game variables
             List<Character> playerList = new List<Character>();
             Character player;
             var exit = false;
+
+            // First Character creation
+            SquadRecruiter.populatePlayers(playerList);
+            player = playerList[0];
+
+            // Character mini game menu
             while (exit == false)
             {
                 printStartMenuUI();
-                switch (Console.ReadLine()) // Char valuetype that represents a keyboard key
+                switch (Console.ReadLine())
                 {
                     case "1":
-                        SquadRecruiter.populatePlayers(playerList);//CREAR MAS PERSONAJES
+                        SquadRecruiter.populatePlayers(playerList); // Create more characters
                         break;
+
                     case "2":
-                        Console.WriteLine("\nChose a character by its number");
+                        Console.WriteLine("\nChose a character by its ID\n");
                         CharacterShowcase.showCharacters(playerList);
-                        player = playerList[Convert.ToInt32(Console.ReadLine())];
+                        int selection = Convert.ToInt32(Console.ReadLine());
+
+                        if (selection <= playerList.Count)
+                        {
+                            player = playerList[selection];
+                        }
+                        else
+                        {
+                            Console.WriteLine("\nChoose a valid character ID");
+                            Thread.Sleep(100);
+                        }
                         break;
+
                     case "3":
-                        //print actual player
+                        Console.WriteLine("\nYour actual character is: \n");
+                        CharacterShowcase.showCharacter(player);
+                        Console.WriteLine("\nEnter some key to continue...");
+                        Console.ReadKey();
                         break;
+
                     case "0":
                         exit = true;
                         break;
+
                     default:
-                        player = playerList[0];
+                        Console.WriteLine("\nChoose a valid option");
+                        Thread.Sleep(100);
                         break;
                 }
             }
@@ -39,7 +64,7 @@ namespace CharactersFactory
             void printStartMenuUI()
             {
                 Console.Clear();
-                Console.WriteLine("Choose an option:");
+                Console.WriteLine("Choose an option:\n");
                 Console.WriteLine("1) Create More Players");
                 Console.WriteLine("2) Change player");
                 Console.WriteLine("3) Show actual player");

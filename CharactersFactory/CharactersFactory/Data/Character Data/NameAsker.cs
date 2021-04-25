@@ -9,6 +9,7 @@ namespace CharactersFactory
         public string askData()
         {
             Console.WriteLine("Chose your character name");
+            Console.Write("\nName: ");
             var name = Console.ReadLine();
             Console.WriteLine("");
             return name;

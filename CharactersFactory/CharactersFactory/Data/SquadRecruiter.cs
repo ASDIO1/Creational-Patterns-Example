@@ -29,7 +29,7 @@ namespace CharactersFactory
                         }
                         else
                         {
-                            Console.WriteLine("Create at least 1 Player");
+                            Console.WriteLine("\nCREATE AT LEAST 1 CHARACTER !");
                             Thread.Sleep(1000);  //waits 1sec befor continuing
                         }
                         break;
@@ -42,10 +42,11 @@ namespace CharactersFactory
         public static void showPlayersCreatorMenu()
         {
             Console.Clear();
-            Console.WriteLine("------Character Creator---------");
-            Console.WriteLine("Choose an option:");
+            Console.WriteLine("------------------CHARACTER CREATOR------------------");
+            Console.WriteLine("Choose an option:\n");
             Console.WriteLine("1) Create Player");
             Console.WriteLine("2) Continue");
+            Console.Write("\nOption: ");
         }
     }
 }
