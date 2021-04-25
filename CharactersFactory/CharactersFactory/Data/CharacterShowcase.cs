@@ -21,8 +21,8 @@ namespace CharactersFactory
         public static void showCharacter(Character character)
         {
             StringBuilder characterData = new StringBuilder();
-            characterData.Append($"Name: {character.name} | health {character.health} | ");
-            characterData.Append($"action: {character.action} | role: {character.GetType().Name}");
+            characterData.Append($"Name: {character.Name} | Health {character.Health} | ");
+            characterData.Append($"action: {character.Action} | role: {character.GetType().Name}");
 
             Console.ForegroundColor = ConsoleColor.Magenta;
             Console.WriteLine(characterData);

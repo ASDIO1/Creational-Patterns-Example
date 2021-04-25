@@ -21,9 +21,9 @@ namespace CharactersFactory
                 assembly = typeof(Character).Assembly;
                 baseType = typeof(Character);
             }
-            List<string> types = assembly.GetTypes()                 //gets all direct subclasses string names in a list
+            List<string> types = assembly.GetTypes()  //gets all direct subclasses string names in a list
                 .Where(t => t.BaseType == baseType)
-                .Select(t => t.Name)  //gets the subclass name string prettyfied 
+                .Select(t => t.Name)  //gets the subclass Name string prettyfied 
                 .ToList();
             return types;
         }

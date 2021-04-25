@@ -6,7 +6,7 @@ namespace CharactersFactory
 {
     class RoleAsker : IAskData<string>
     {
-        public string askData()
+        public string AskData()
         {
             Console.WriteLine("Chose a character role");
             var index = 1;

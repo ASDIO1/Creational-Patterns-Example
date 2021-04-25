@@ -6,17 +6,17 @@ namespace CharactersFactory
 {
     class Character
     {
-        public enum Action
+        public enum Actions
         {
             Standing,
             Covered
         }
         public Character()
         {
-            action = Action.Standing;
+            Action = Actions.Standing;
         }
-        public string name { get; set; }
-        public int health { get; set; }
-        public Action action { get; set; }
+        public string Name { get; set; }
+        public int Health { get; set; }
+        public Actions Action { get; set; }
     }
 }

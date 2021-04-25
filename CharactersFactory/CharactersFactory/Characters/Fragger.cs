@@ -8,7 +8,7 @@ namespace CharactersFactory
     {
         public Fragger()
         {
-            health = 130;
+            Health = 130;
         }
     }
 }

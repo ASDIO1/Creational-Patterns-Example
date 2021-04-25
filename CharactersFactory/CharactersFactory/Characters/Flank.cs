@@ -8,7 +8,7 @@ namespace CharactersFactory
     {
         public Flank()
         {
-            health = 100;
+            Health = 100;
         }
     }
 }

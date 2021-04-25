@@ -8,7 +8,7 @@ namespace CharactersFactory
     {
         public Tank()
         {
-            health = 200;
+            Health = 200;
         }
     }
 }

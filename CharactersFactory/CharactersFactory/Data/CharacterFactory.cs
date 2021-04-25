@@ -10,12 +10,12 @@ namespace CharactersFactory
         {
             switch (role)
             {
-                case "Flank":/*PlayerRole.Flank:*/
-                    return new Flank() { name = characterName};
+                case "Flank":// PlayerRole.Flank:
+                    return new Flank() { Name = characterName};
                 case "Fragger":
-                    return new Fragger() { name = characterName};
+                    return new Fragger() { Name = characterName};
                 case "Tank":
-                    return new Tank() { name = characterName};
+                    return new Tank() { Name = characterName};
                 default:
                     return null;
             }

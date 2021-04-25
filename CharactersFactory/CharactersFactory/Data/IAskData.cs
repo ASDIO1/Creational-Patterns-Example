@@ -6,6 +6,6 @@ namespace CharactersFactory
 {
     interface IAskData<T>
     {
-        T askData();
+        T AskData();
     }
 }
