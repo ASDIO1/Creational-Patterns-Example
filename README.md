@@ -29,3 +29,8 @@ This project was made trying to follow SOLID principles and I ended up with some
 to understand with diagrams.
 
 In this repository are images with a Classes diagram and a Sequence diagram of this program.
+
+## Aclaration
+
+I know this project could be enhanced and be more SOLID, but the main focus was just to implement the **Factory creational pattern** to solve some problem.
+In this case the problem was the way the characters are created.
