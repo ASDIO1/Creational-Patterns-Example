@@ -5,7 +5,7 @@ Simple example of creational patterns for studying purposes
 
 The problem Im solving with creational patterns is a Character creation menu.
 
-Actually this is just a part of a bigger project I made about creating characters who shoot each other.
+This program is actually just a part of a bigger project (game) I made about creating characters who shoot each other.
 
 In this previous project It would have been usefull to use a creational pattern. So I decided to a apply
 the * Factory creational pattern * for the character creation part in the project.
