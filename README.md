@@ -47,3 +47,7 @@ I just wrote that function in the diagram to make sense of the actions in the pr
 What the "SelectPlayerCharacter()" represents is what the name says, but in the code this is a simple "player = playerList[selection];"
 
 -  The sequence diagram only represents the events ocurring in the main file "program.cs"
+
+-  The program is often asking for the user to choose an option. Each option is always numbered in the menu 
+For Example: "0)continue" this means that the user has to enter the "0" key to use the "continue" option in the menu.
+Please do not enter options out of range as I did not control this kind of exceptions.

@@ -6,7 +6,7 @@ namespace CharactersFactory
 {
     class CharacterShowcase
     {
-        public static void showCharacters(List<Character> characterList)
+        public static void ShowCharacters(List<Character> characterList)
         {
             Console.WriteLine("\n");
             for (int i = 0; i < characterList.Count; i++)
@@ -14,11 +14,11 @@ namespace CharactersFactory
 
                 var c = characterList[i];
                 Console.Write($"{i}) ");
-                showCharacter(c);
+                ShowCharacter(c);
                 Console.WriteLine();
             }
         }
-        public static void showCharacter(Character character)
+        public static void ShowCharacter(Character character)
         {
             StringBuilder characterData = new StringBuilder();
             characterData.Append($"Name: {character.Name} | Health {character.Health} | ");

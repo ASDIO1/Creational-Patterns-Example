@@ -6,7 +6,7 @@ namespace CharactersFactory
 {
     class CharacterInfo
     {
-        public static Character obtainCharacter()
+        public static Character ObtainCharacterData()
         {
             // Console.Clear();
             RoleAsker roleData = new RoleAsker();

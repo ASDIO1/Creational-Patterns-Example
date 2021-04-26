@@ -7,17 +7,17 @@ namespace CharactersFactory
 {
     class SquadRecruiter
     {
-        public static void populatePlayers(List<Character> playerList)
+        public static void PopulatePlayers(List<Character> playerList)
         {
 
             bool exit = false;
             while (exit == false)
             {
-                showPlayersCreatorMenu();
+                ShowPlayersCreatorMenu();
                 switch (Console.ReadLine())
                 {
                     case "1":
-                        var player = CharacterInfo.obtainCharacter();
+                        var player = CharacterInfo.ObtainCharacterData();
                         playerList.Add(player);
                         Console.WriteLine("player added...");
                         Thread.Sleep(100);
@@ -39,7 +39,7 @@ namespace CharactersFactory
             }
 
         }
-        public static void showPlayersCreatorMenu()
+        public static void ShowPlayersCreatorMenu()
         {
             Console.Clear();
             Console.WriteLine("------------------CHARACTER CREATOR------------------");
