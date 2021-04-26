@@ -30,6 +30,7 @@ namespace CharactersFactory
                     case "2":
                         Console.WriteLine("\nChose a character by its ID\n");
                         CharacterShowcase.ShowCharacters(playerList);
+                        Console.Write("Selection: ");
                         int selection = Convert.ToInt32(Console.ReadLine());
 
                         if (selection <= playerList.Count)
