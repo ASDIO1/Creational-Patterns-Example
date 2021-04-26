@@ -45,3 +45,5 @@ In this case the problem was the way the characters are created.
 -  In the Sequence diagram, I use a function called "SelectPlayerCharacter()" but in the actual program there is no function for the character/player selection
 I just wrote that function in the diagram to make sense of the actions donde in the program.cs file.
 What the "SelectPlayerCharacter()" represents is what the name says, but in the code this is a simple "player = playerList[selection];"
+
+-  The sequence diagram only represents the events ocurring in the main file "program.cs"
