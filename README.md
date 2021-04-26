@@ -1,6 +1,13 @@
 # Creational-Patterns-Example
 Simple example of creational patterns for studying purposes
 
+## Table of contents
+-  [Problem] (#problem)
+-  [Program usage guide] (#program-usage-guide)
+-  [Program usage guide] (#program-usage-guide)
+-  [Documentation] (#documentation)
+-  [Aclarations] (#aclarations)
+
 ## Problem
 
 The problem Im solving with creational patterns is a Character creation menu.
@@ -30,7 +37,11 @@ to understand with diagrams.
 
 In this repository are images with a Classes diagram and a Sequence diagram of this program.
 
-## Aclaration
+## Aclarations
 
-I know this project could be enhanced and be more SOLID, but the main focus was just to implement the **Factory creational pattern** to solve some problem.
+-  I know this project could be enhanced and be more SOLID, but the main focus was just to implement the **Factory creational pattern** to solve some problem.
 In this case the problem was the way the characters are created.
+
+-  In the Sequence diagram, I use a function called "SelectPlayerCharacter()" but in the actual program there is no function for the character/player selection
+I just wrote that function in the diagram to make sense of the actions donde in the program.cs file.
+What the "SelectPlayerCharacter()" represents is what the name says, but in the code this is a simple "player = playerList[selection];"
