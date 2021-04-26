@@ -2,10 +2,11 @@
 Simple example of creational patterns for studying purposes
 
 ## Table of contents
-- [Problem] (#problem)
-- [Program usage guide] (#program-usage-guide)
-- [Documentation] (#documentation)
-- [Aclarations] (#aclarations)
+
+- [Problem](#problem)
+- [Program usage guide](#program-usage-guide)
+- [Documentation](#documentation)
+- [Aclarations](#aclarations)
 
 ## Problem
 
